@@ -64,9 +64,9 @@ $MYAPP_NAME = 'Alex'
 # {'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
 
 ./myapp --debug hello
-# TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],), captured=hiddenobject
+# TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],)
 # Hello DefaultName
-# TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],), captured=hiddenobject
+# TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],)
 # Here is debug message too
 ```
 
