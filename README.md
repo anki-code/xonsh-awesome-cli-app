@@ -8,6 +8,7 @@ Example of awesome cli app template for xonsh. Just fork it and add your command
 * Setting up context with logging and debugging levels.
 * Setting up context arguments and command arguments.
 * Ability to use environment variables as replacement of arguments.
+* Use `ctx.log` to different logging levels.
 
 ## Usage
 
