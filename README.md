@@ -14,6 +14,10 @@ Example of awesome cli app template for xonsh. Just fork it and add your command
 You can use this app as a template to your own apps.
 
 ```xsh
+git clone https://github.com/anki-code/xonsh-awesome-cli-app
+cd xonsh-awesome-cli-app
+chmod +x myapp
+
 ./myapp
 # Usage: myapp [OPTIONS] COMMAND [ARGS]...
 # 
@@ -51,6 +55,12 @@ You can use this app as a template to your own apps.
 $MYAPP_NAME = 'Alex'
 ./myapp hello
 # Hello Alex
+
+./myapp --debug hello
+# TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],), captured=hiddenobject
+# Hello DefaultName
+# TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],), captured=hiddenobject
+# Here is debug message too
 ```
 
 ## Future
