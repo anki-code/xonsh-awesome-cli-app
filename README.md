@@ -57,10 +57,10 @@ $MYAPP_NAME = 'Alex'
 # Hello Alex
 
 ./myapp context
-Environment:
-{'MYAPP_NAME': 'Alex'}
-Context:
-{'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
+# Environment:
+# {'MYAPP_NAME': 'Alex'}
+# Context:
+# {'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
 
 ./myapp --debug hello
 # TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],), captured=hiddenobject
