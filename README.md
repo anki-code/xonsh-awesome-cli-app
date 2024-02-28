@@ -25,8 +25,8 @@ chmod +x myapp
 #   CLI management.
 # 
 # Options:
-#   --name TEXT  Context argument: name.
-#   --debug      Context argument: debug mode.
+#   --name TEXT  Context option: name.
+#   --debug      Context option: debug mode.
 #   --help       Show this message and exit.
 # 
 # Commands:
