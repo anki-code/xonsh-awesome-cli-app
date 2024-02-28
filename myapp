@@ -7,13 +7,10 @@ xonsh-awesome-cli-app
 """
 
 import os
-import sys
 import time
 import click
-import json
 import logging
 import pprint
-import subprocess
 from pathlib import Path
 
 
