@@ -1,6 +1,6 @@
 # xonsh-awesome-cli-app
 
-Example of awesome cli app template for xonsh.
+Example of awesome cli app template for xonsh. Just fork it and add your commands.
 
 ## Features
 
