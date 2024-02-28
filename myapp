@@ -65,7 +65,7 @@ def cli(ctx, name, debug):
     
     if debug:
         $XONSH_TRACE_SUBPROC = True
-        #$XONSH_SHOW_TRACEBACK = True
+        $XONSH_SHOW_TRACEBACK = True
 
 
 @cli.command()
