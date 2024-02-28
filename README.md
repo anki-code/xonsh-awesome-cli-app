@@ -5,7 +5,7 @@ Example of awesome cli app template for xonsh. Just fork it and add your command
 ## Features
 
 * Based on power and sugar from [click](https://click.palletsprojects.com).
-* Setting up context with logging and debugging levels.
+* Setting up context and environment.
 * Setting up context options and command arguments.
 * Ability to use environment variables as replacement of options and arguments.
 * Use `ctx.log` to different logging levels.
