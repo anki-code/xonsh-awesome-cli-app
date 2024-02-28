@@ -92,7 +92,7 @@ def context(ctx):
     Show app context.
     """
     print('Environment:')
-    pprint.pprint({k:v for k,v in os.environ.items() if k.startswith(_PFX)})
+    pprint.pprint({k:v for k,v in os.environ.items() if k.startswith(_PFX+'_')})
 
     print('Context:')
     pprint.pprint(vars(ctx))
