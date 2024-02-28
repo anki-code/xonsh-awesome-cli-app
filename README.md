@@ -55,4 +55,9 @@ $MYAPP_NAME = 'Alex'
 
 ## Future
 
-I'm going to transform this to pip-installable xonsh xontrib using [xontrib template](https://github.com/xonsh/xontrib-template).
+I'm going to transform this to pip-installable xonsh xontrib using [xontrib template](https://github.com/xonsh/xontrib-template) e.g.
+```xsh
+pip install .
+myapp hello
+# Hello DefaultName
+```
