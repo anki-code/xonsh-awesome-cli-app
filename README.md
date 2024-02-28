@@ -75,15 +75,6 @@ $MYAPP_NAME = 'Alex'
 # Here is debug message too
 ```
 
-## Future
-
-I'm going to transform this to pip-installable xonsh xontrib using [xontrib template](https://github.com/xonsh/xontrib-template) e.g.
-```xsh
-pip install .
-myapp hello
-# Hello DefaultName
-```
-
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet) - Cheat sheet for xonsh shell with copy-pastable examples. 
 * [rc-awesome](https://github.com/anki-code/xontrib-rc-awesome) - Awesome snippets of code for xonshrc in xonsh shell.
