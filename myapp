@@ -82,6 +82,7 @@ def hello(ctx, wait):
 
     # Use context.
     if ctx.debug:
+        ctx.log.info('Additional log message.')
         echo Here is debug message too!
 
 
