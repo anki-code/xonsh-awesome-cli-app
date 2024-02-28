@@ -47,8 +47,8 @@ class CliCtx:
 
 
 @click.group(cls=OrderCommands)
-@click.option("--name", envvar=f'{_PFX}_NAME', default='DefaultName', help="Context argument: name.")
-@click.option("--debug", default=False, is_flag=True, envvar=f'{_PFX}_DEBUG', help="Context argument: debug mode.")
+@click.option("--name", envvar=f'{_PFX}_NAME', default='DefaultName', help="Context option: name.")
+@click.option("--debug", default=False, is_flag=True, envvar=f'{_PFX}_DEBUG', help="Context option: debug mode.")
 @click.pass_context
 def cli(ctx, name, debug):
     """
