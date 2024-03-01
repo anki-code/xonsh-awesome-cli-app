@@ -30,7 +30,7 @@ class CliCtx:
         self.log.setLevel(logging.INFO)
 
         ch = logging.StreamHandler()
-        log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s\n%(message)s')
+        log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         ch.setFormatter(log_format)
         self.log.addHandler(ch)
 
@@ -58,16 +58,17 @@ def cli(ctx, name, debug):
 
 
 @cli.command()
+@click.argument('text')
 @click.option("--wait", default=False, is_flag=True, help="Command argument: wait before print.")
 @click.pass_obj
-def hello(ctx, wait):
-    """Say hello."""
+def say(ctx, text, wait):
+    """Say."""
 
     if wait:
         echo Wait...
         sleep 3
 
-    echo Hello @(ctx.name)
+    echo @(ctx.name) say: @(text)
 
     # Use context.
     if ctx.debug:

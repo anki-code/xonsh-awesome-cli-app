@@ -45,8 +45,8 @@ mycli
 #   --help       Show this message and exit.
 # 
 # Commands:
-#   hello    Say hello.
-#   context  Show app context.
+#  say      Say.
+#  context  Show app context.
 
 mycli hello --help
 # Usage: mycli hello [OPTIONS]
@@ -57,31 +57,32 @@ mycli hello --help
 #   --wait  Command argument: wait before print.
 #   --help  Show this message and exit.
 
-mycli hello
-# Hello Username
+mycli say hello
+# Username say: hello
 
-mycli hello --wait
+mycli say hello --wait
 # Wait...
-# Hello Username
+# Username say: hello
 
-mycli --name Mike hello --wait
+mycli --name Mike say hello --wait
 # Wait...
-# Hello Mike
+# Mike say: hello
 
 $MYCLI_NAME = 'Alex'
-mycli hello
-# Hello Alex
+mycli say hello
+# Alex say: hello
 
 mycli context
 # Environment:
-# {'MYAPP_NAME': 'Alex'}
+# {'MYCLI_NAME': 'Alex'}
 # Context:
 # {'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
 
-mycli --debug hello
-# TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],)
-# Hello DefaultName
-# TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],)
+mycli --debug say hello
+# TRACE SUBPROC: (['echo', 'Username', 'say:', 'hello'],), captured=hiddenobject
+# Username say: hello
+# 2024-03-01 18:21:24,723 - root - INFO - Additional log message.
+# TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],), captured=hiddenobject
 # Here is debug message too
 ```
 
