@@ -7,22 +7,16 @@ xonsh-awesome-cli-app
 """
 
 import os
-import time
 import click
 import logging
 import pprint
 from pathlib import Path
+from .lib.click import OrderCommands
 
 
-# Set the prefix for environment variables. The app file name by default e.g. `./myapp.xsh` will be `MYAPP`.
-# Usage: set `click.option(envvar)` and instead of passing `--name qwe` you can set `$MYAPP_NAME='qwe'`.
+# Set the prefix for environment variables. The app file name by default e.g. `./mycli` will be `MYCLI`.
+# Usage: set `click.option(envvar)` and instead of passing `--name qwe` you can set `$MYCLI_NAME='qwe'`.
 _PFX = ''.join(e for e in Path(__file__).stem.upper() if e.isalnum())
-
-
-class OrderCommands(click.Group):
-    """Class to show `click` commands in declaration order."""
-    def list_commands(self, ctx: click.Context) -> list[str]:
-        return list(self.commands)
 
 
 class CliCtx:
@@ -47,22 +41,17 @@ class CliCtx:
 
 
 @click.group(cls=OrderCommands)
-@click.option("--name", envvar=f'{_PFX}_NAME', default='DefaultName', help="Context option: name.")
+@click.option("--name", envvar=f'{_PFX}_NAME', default='Username', help="Context option: name.")
 @click.option("--debug", default=False, is_flag=True, envvar=f'{_PFX}_DEBUG', help="Context option: debug mode.")
 @click.pass_context
 def cli(ctx, name, debug):
-    """
-    CLI management.
-    """
+    """Xonsh CLI app."""
 
-    # Check something and raise exception.
-    if False:
-        raise Exception('Exception!')
-
+    # Setting context object.
     ctx.obj = CliCtx(name, debug)
 
+    # Setting up the environment variables.
     $RAISE_SUBPROC_ERROR = True
-    
     if debug:
         $XONSH_TRACE_SUBPROC = True
         $XONSH_SHOW_TRACEBACK = True

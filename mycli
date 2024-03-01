@@ -1,0 +1,7 @@
+#!/usr/bin/env xonsh
+
+# Fix https://github.com/xonsh/xonsh/issues/5291
+__import__('sys').path.append('.')
+
+from xonsh_awesome_cli_app.cli import cli
+cli()

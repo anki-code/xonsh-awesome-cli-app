@@ -1,5 +1,5 @@
 <p align="center">  
-    Example of awesome cli app template for xonsh. Just fork it and add your commands.
+    Example of awesome CLI app template for xonsh. Just fork it and add your commands.
 </p>
 
 <p align="center">  
@@ -10,10 +10,12 @@ If you like the idea of bar theme click ⭐ on the repo and <a href="https://twi
 ## Features
 
 * Based on power and sugar from [click](https://click.palletsprojects.com).
-* Setting up context and environment.
-* Setting up context options and command arguments.
+* Pip-installable as well as clone-and-run.
+* Ability to grow your library.
+* Ability to set up context and environment.
+* Ability to set up context options and command arguments.
 * Ability to use environment variables as replacement of options and arguments.
-* Use `ctx.log` to different logging levels.
+* Logging included.
 
 ## Usage
 
@@ -24,8 +26,8 @@ git clone https://github.com/anki-code/xonsh-awesome-cli-app
 cd xonsh-awesome-cli-app
 chmod +x myapp
 
-./myapp
-# Usage: myapp [OPTIONS] COMMAND [ARGS]...
+./mycli
+# Usage: mycli [OPTIONS] COMMAND [ARGS]...
 # 
 #   CLI management.
 # 
@@ -38,8 +40,8 @@ chmod +x myapp
 #   hello    Say hello.
 #   context  Show app context.
 
-./myapp hello --help
-# Usage: myapp hello [OPTIONS]
+./mycli hello --help
+# Usage: mycli hello [OPTIONS]
 # 
 #   Say hello.
 # 
@@ -47,28 +49,28 @@ chmod +x myapp
 #   --wait  Command argument: wait before print.
 #   --help  Show this message and exit.
 
-./myapp hello
-# Hello DefaultName
+./mycli hello
+# Hello Username
 
-./myapp hello --wait
+./mycli hello --wait
 # Wait...
-# Hello DefaultName
+# Hello Username
 
-./myapp --name Mike hello --wait
+./mycli --name Mike hello --wait
 # Wait...
 # Hello Mike
 
-$MYAPP_NAME = 'Alex'
-./myapp hello
+$MYCLI_NAME = 'Alex'
+./mycli hello
 # Hello Alex
 
-./myapp context
+./mycli context
 # Environment:
 # {'MYAPP_NAME': 'Alex'}
 # Context:
 # {'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
 
-./myapp --debug hello
+./mycli --debug hello
 # TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],)
 # Hello DefaultName
 # TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],)
