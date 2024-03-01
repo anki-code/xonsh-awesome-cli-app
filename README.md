@@ -81,3 +81,4 @@ $MYAPP_NAME = 'Alex'
 * [macro](https://github.com/anki-code/xontrib-macro) - Library of the useful macro for the xonsh shell.
 * [docker-xonsh-wrapper](https://github.com/anki-code/docker-xonsh-wrapper) - Wrap an app in docker container and catch the signals from docker using xonsh shell. 
 * [xunter](https://github.com/anki-code/xunter) - Profiling the xonsh shell code using [hunter](https://github.com/ionelmc/python-hunter).
+* [click: Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
