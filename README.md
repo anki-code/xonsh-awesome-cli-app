@@ -17,16 +17,24 @@ If you like the idea of bar theme click ⭐ on the repo and <a href="https://twi
 * Ability to use environment variables as replacement of options and arguments.
 * Logging included.
 
+## Install
+
+```xsh
+pip install git+https://github.com/anki-code/xonsh-awesome-cli-app
+mycli
+```
+or
+```xsh
+git clone https://github.com/anki-code/xonsh-awesome-cli-app
+xonsh-awesome-cli-app
+./mycli
+```
 ## Usage
 
 You can use this app as a template to your own apps.
 
 ```xsh
-git clone https://github.com/anki-code/xonsh-awesome-cli-app
-cd xonsh-awesome-cli-app
-chmod +x myapp
-
-./mycli
+mycli
 # Usage: mycli [OPTIONS] COMMAND [ARGS]...
 # 
 #   CLI management.
@@ -40,7 +48,7 @@ chmod +x myapp
 #   hello    Say hello.
 #   context  Show app context.
 
-./mycli hello --help
+mycli hello --help
 # Usage: mycli hello [OPTIONS]
 # 
 #   Say hello.
@@ -49,28 +57,28 @@ chmod +x myapp
 #   --wait  Command argument: wait before print.
 #   --help  Show this message and exit.
 
-./mycli hello
+mycli hello
 # Hello Username
 
-./mycli hello --wait
+mycli hello --wait
 # Wait...
 # Hello Username
 
-./mycli --name Mike hello --wait
+mycli --name Mike hello --wait
 # Wait...
 # Hello Mike
 
 $MYCLI_NAME = 'Alex'
-./mycli hello
+mycli hello
 # Hello Alex
 
-./mycli context
+mycli context
 # Environment:
 # {'MYAPP_NAME': 'Alex'}
 # Context:
 # {'debug': False, 'log': <RootLogger root (INFO)>, 'name': 'Alex'}
 
-./mycli --debug hello
+mycli --debug hello
 # TRACE SUBPROC: (['echo', 'Hello', 'DefaultName'],)
 # Hello DefaultName
 # TRACE SUBPROC: (['echo', 'Here', 'is', 'debug', 'message', 'too', ''],)
