@@ -26,7 +26,7 @@ mycli
 or
 ```xsh
 git clone https://github.com/anki-code/xonsh-awesome-cli-app
-xonsh-awesome-cli-app
+cd xonsh-awesome-cli-app
 ./mycli
 ```
 ## Usage
