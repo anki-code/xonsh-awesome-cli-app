@@ -93,4 +93,4 @@ mycli --debug say hello
 * [docker-xonsh-wrapper](https://github.com/anki-code/docker-xonsh-wrapper) - Wrap an app in docker container and catch the signals from docker using xonsh shell. 
 * [xunter](https://github.com/anki-code/xunter) - Profiling the xonsh shell code using [hunter](https://github.com/ionelmc/python-hunter).
 * [click: Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
-* [Xxh Development Environment (xde)]([https://github.com/xxh/xxh/tree/master/xde](https://github.com/xxh/xxh/tree/7222c47482a8e46cbdf1eb23589f40962425a4a0/xde)https://github.com/xxh/xxh/tree/7222c47482a8e46cbdf1eb23589f40962425a4a0/xde)
+* [Xxh Development Environment (xde)](https://github.com/xxh/xxh/tree/7222c47482a8e46cbdf1eb23589f40962425a4a0/xde)
