@@ -86,7 +86,7 @@ mycli --debug say hello
 # Here is debug message too
 ```
 
-## See more
+## See more CLI libs
 * [click](https://click.palletsprojects.com/)
 * [rich](https://github.com/Textualize/rich)
 * [typer](https://typer.tiangolo.com/)
