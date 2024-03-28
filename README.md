@@ -87,7 +87,7 @@ mycli --debug say hello
 ```
 
 ## See more CLI libs
-* [click](https://click.palletsprojects.com/)
+* [click](https://click.palletsprojects.com/), [Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
 * [rich](https://github.com/Textualize/rich)
 * [typer](https://typer.tiangolo.com/)
 
@@ -97,5 +97,4 @@ mycli --debug say hello
 * [macro](https://github.com/anki-code/xontrib-macro) - Library of the useful macro for the xonsh shell.
 * [docker-xonsh-wrapper](https://github.com/anki-code/docker-xonsh-wrapper) - Wrap an app in docker container and catch the signals from docker using xonsh shell. 
 * [xunter](https://github.com/anki-code/xunter) - Profiling the xonsh shell code using [hunter](https://github.com/ionelmc/python-hunter).
-* [click: Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
 * [Xxh Development Environment (xde)](https://github.com/xxh/xxh/tree/7222c47482a8e46cbdf1eb23589f40962425a4a0/xde)
