@@ -86,6 +86,11 @@ mycli --debug say hello
 # Here is debug message too
 ```
 
+## See more
+* [click](https://click.palletsprojects.com/)
+* [rich](https://github.com/Textualize/rich)
+* [typer](https://typer.tiangolo.com/)
+
 ## See also
 * [xonsh-cheatsheet](https://github.com/anki-code/xonsh-cheatsheet) - Cheat sheet for xonsh shell with copy-pastable examples. 
 * [rc-awesome](https://github.com/anki-code/xontrib-rc-awesome) - Awesome snippets of code for xonshrc in xonsh shell.
