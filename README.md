@@ -16,6 +16,7 @@ If you like the idea of bar theme click ⭐ on the repo and <a href="https://twi
 * Ability to set up context options and command arguments.
 * Ability to use environment variables as replacement of options and arguments.
 * Logging included.
+* The way to write tests included.
 
 ## Install
 
