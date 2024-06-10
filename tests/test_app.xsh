@@ -1,3 +1,3 @@
 def test_say():
-    out = $(xonsh mycli say hello).strip()
+    out = $(xonsh --no-rc mycli say hello).strip()
     assert out == 'Username say: hello'
