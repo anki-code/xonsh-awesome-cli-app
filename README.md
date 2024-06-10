@@ -86,6 +86,15 @@ mycli --debug say hello
 # Here is debug message too
 ```
 
+## Tests
+
+You can use `pytest` for test cli:
+
+```xsh
+pytest tests/
+# tests/test_app.xsh passed
+```
+
 ## See more CLI libs
 * [click](https://click.palletsprojects.com/), [Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
 * [rich](https://github.com/Textualize/rich)
