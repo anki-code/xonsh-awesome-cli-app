@@ -52,9 +52,10 @@ def cli(ctx, name, debug):
 
     # Setting up the environment variables.
     $RAISE_SUBPROC_ERROR = True
+    $XONSH_SHOW_TRACEBACK = True
     if debug:
         $XONSH_TRACE_SUBPROC = True
-        $XONSH_SHOW_TRACEBACK = True
+
 
 
 @cli.command()
