@@ -68,7 +68,7 @@ def say(ctx, text, wait):
         echo Wait...
         sleep 3
 
-    arg_e = [[], '-e'][ctx.debug]  # Example of how to elegant write switchers for arguments.
+    arg_e = ['-e', []][ctx.debug]  # Example of how to elegant write switchers for arguments.
 
     echo @(arg_e) @(ctx.name) say: @(text)
 
