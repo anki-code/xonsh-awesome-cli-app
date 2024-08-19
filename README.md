@@ -89,7 +89,7 @@ mycli --debug say hello
 
 ### How to create subcommands
 
-If you need subcommands e.g.:
+If you need subcommands (subgroups) e.g.:
 
 ```xsh
 mycli env activate --name myname
@@ -102,15 +102,15 @@ use this example:
 ```python
 import click
 
-@click.group()  # Create main group in `@click.`
+@click.group()  # Create main group in `click`
 def cli():
     pass
 
-@cli.group()  # Create subgroup in `@cli.`
+@cli.group()  # Create subgroup `env` in `cli`
 def env():
     pass
 
-@env.command()  # Create subcommand in `@env.`
+@env.command()  # Create subcommand `activate` in `env`
 @click.option('--name')
 def activate(name):
     click.echo(f"Activating environment: {name}")
