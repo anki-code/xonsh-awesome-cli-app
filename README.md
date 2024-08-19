@@ -125,6 +125,23 @@ pytest tests/
 # tests/test_app.xsh passed
 ```
 
+## Known issues
+
+### pytest: xonsh not found
+
+In some sort situations you need to use current env python to run tests:
+
+```xsh
+@(sys.executable) -m pytest -v
+```
+
+```xsh
+import sys
+py = sys.executable
+def test_help():
+    @(py) -m xonsh ./mycli --help
+```
+
 ## See more CLI libs
 * [click](https://click.palletsprojects.com/), [Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
 * [rich](https://github.com/Textualize/rich)
