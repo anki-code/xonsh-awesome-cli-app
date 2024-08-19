@@ -87,6 +87,35 @@ mycli --debug say hello
 # Here is debug message too
 ```
 
+### How to create subcommands
+
+If you need subcommands e.g.:
+
+```xsh
+mycli env activate --name myname
+mycli env deactivate
+mycli info --full
+```
+
+use this example:
+
+```python
+import click
+
+@click.group()  # Create main group in `@click.`
+def cli():
+    pass
+
+@cli.group()  # Create subgroup in `@cli.`
+def env():
+    pass
+
+@env.command()  # Create subcommand in `@env.`
+@click.option('--name')
+def activate(name):
+    click.echo(f"Activating environment: {name}")
+```
+
 ## Tests
 
 You can use `pytest` for test cli:
