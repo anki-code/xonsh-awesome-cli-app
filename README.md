@@ -9,8 +9,8 @@ If you like the idea of bar theme click ⭐ on the repo and <a href="https://twi
 
 ## Features
 
-* Based on power and sugar from [click](https://click.palletsprojects.com).
-* Pip-installable as well as clone-and-run.
+* CLI: based on power and sugar from [click](https://click.palletsprojects.com).
+* Execution: pip-installable as well as clone-and-run.
 * Ability to grow your library.
 * Ability to set up context and environment.
 * Ability to set up context options and command arguments.
