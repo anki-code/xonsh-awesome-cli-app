@@ -92,6 +92,19 @@ def context(ctx):
     pprint.pprint(vars(ctx))
 
 
+@cli.group()
+def env():
+    """Example of subgroup e.g. `mycli env info`."""
+    pass
+
+
+@env.command()
+@click.pass_obj
+def info(ctx):
+    """Subgroup command example."""
+    print('Hello from `mycli env info`')
+
+
 if __name__ == "__main__":
     cli()
 
