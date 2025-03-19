@@ -15,6 +15,7 @@ If you like the idea of bar theme click ⭐ on the repo and <a href="https://twi
 * Ability to set up context and environment.
 * Ability to set up context options and command arguments.
 * Ability to use environment variables as replacement of options and arguments.
+* Subgroups support e.g. `mycli subgroup subcommand --subcommand-option`.
 * Logging
 * Tests: local, docker.
 
