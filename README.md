@@ -145,6 +145,7 @@ def test_help():
 
 ## See more CLI libs
 * [click](https://click.palletsprojects.com/), [Shared options and flags between commands](https://stackoverflow.com/questions/40182157/shared-options-and-flags-between-commands)
+* [fire](https://github.com/google/python-fire)
 * [rich](https://github.com/Textualize/rich)
 * [typer](https://typer.tiangolo.com/)
 
