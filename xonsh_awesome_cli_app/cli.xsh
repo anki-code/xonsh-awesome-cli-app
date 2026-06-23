@@ -51,7 +51,6 @@ def cli(ctx, name, debug):
     ctx.obj = CliCtx(name, debug)
 
     # Setting up the environment variables.
-    $RAISE_SUBPROC_ERROR = True
     $XONSH_SHOW_TRACEBACK = True
     if debug:
         $XONSH_TRACE_SUBPROC = True
