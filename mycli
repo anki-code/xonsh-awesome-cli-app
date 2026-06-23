@@ -1,6 +1,4 @@
 #!/usr/bin/env xonsh
 
-@.imp.sys.path.append('.')  # Fix https://github.com/xonsh/xonsh/issues/5291
-
 from xonsh_awesome_cli_app.cli import cli
 cli()
