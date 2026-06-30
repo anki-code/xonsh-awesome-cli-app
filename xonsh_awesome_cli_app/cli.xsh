@@ -53,7 +53,7 @@ def cli(ctx, name, debug):
     # Setting up the environment variables.
     $XONSH_SHOW_TRACEBACK = True
     if debug:
-        $XONSH_TRACE_SUBPROC = True
+        $XONSH_SUBPROC_TRACE = True
 
 
 
